@@ -26,7 +26,6 @@ export default function CheckboxList() {
     } else {
       item.checked = true;
     }
-
   };
 
   return (

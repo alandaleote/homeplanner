@@ -7,6 +7,7 @@ import TabPanel from '@mui/lab/TabPanel';
 
 import MyList from '../components/MyList.js';
 import CheckboxList from '../components/CheckboxList.js';
+import Tasks from './Tasks.js';
 
 export default function HomeTabs() {
   const [value, setValue] = React.useState('1');
@@ -20,19 +21,18 @@ export default function HomeTabs() {
       <TabContext value={value}>
         <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
           <TabList
-            centered
             variant="fullWidth"
-            textColor="secondary"
-            indicatorColor="secondary"
+            textColor="primary"
+            indicatorColor="primary"
             onChange={handleChange}
-            aria-label="lab API tabs example">
+          >
             <Tab label="Tarefas" value="1" />
             <Tab label="Listas" value="2" />
             <Tab label="Finanças" value="3" />
           </TabList>
         </Box>
-        <TabPanel value="1"><CheckboxList /></TabPanel>
-        <TabPanel value="2"><MyList /></TabPanel>
+        <TabPanel value="1"><Tasks /></TabPanel>
+        <TabPanel value="2"><CheckboxList /></TabPanel>
         <TabPanel value="3"><MyList /></TabPanel>
       </TabContext>
     </Box>

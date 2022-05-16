@@ -32,7 +32,7 @@ export default function HomeTabs() {
           </TabList>
         </Box>
         <TabPanel value="1"><Tasks /></TabPanel>
-        <TabPanel value="2"><CheckboxList /></TabPanel>
+        <TabPanel value="2"><MyList /></TabPanel>
         <TabPanel value="3"><MyList /></TabPanel>
       </TabContext>
     </Box>

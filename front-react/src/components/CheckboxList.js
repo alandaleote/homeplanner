@@ -11,7 +11,7 @@ import PermMedia from '@mui/icons-material/PermMedia';
 import Dns from '@mui/icons-material/Dns';
 import Public from '@mui/icons-material/Public';
 
-export default function CheckboxListSecondary() {
+export default function CheckboxList() {
 
   const data = [
     { id: 0, checked: false, icon: <People />, label: 'Authentication' },

@@ -5,10 +5,10 @@ import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 
-import MyList from './List.js';
-import CheckboxListSecondary from './CheckList.js';
+import MyList from '../components/MyList.js';
+import CheckboxList from '../components/CheckboxList.js';
 
-export default function LabTabs() {
+export default function HomeTabs() {
   const [value, setValue] = React.useState('1');
 
   const handleChange = (event, newValue) => {
@@ -31,7 +31,7 @@ export default function LabTabs() {
             <Tab label="Finanças" value="3" />
           </TabList>
         </Box>
-        <TabPanel value="1"><CheckboxListSecondary /></TabPanel>
+        <TabPanel value="1"><CheckboxList /></TabPanel>
         <TabPanel value="2"><MyList /></TabPanel>
         <TabPanel value="3"><MyList /></TabPanel>
       </TabContext>

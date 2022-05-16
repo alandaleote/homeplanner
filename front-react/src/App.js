@@ -2,14 +2,14 @@ import * as React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
 
-import LabTabs from './pages/LabTabs';
+import HomeTabs from './pages/HomeTabs';
 
 function App() {
   return (
     <React.Fragment>
       <CssBaseline />
       <Container maxWidth="sm">
-        <LabTabs />
+        <HomeTabs />
       </Container>
     </React.Fragment>
 

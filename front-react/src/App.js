@@ -2,15 +2,14 @@ import * as React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
 
-import PinnedSubheaderList from "./pages/DateList.js"
-import CheckboxListSecondary from './pages/CheckList.js';
+import LabTabs from './pages/LabTabs';
 
 function App() {
   return (
     <React.Fragment>
       <CssBaseline />
       <Container maxWidth="sm">
-        <CheckboxListSecondary />
+        <LabTabs />
       </Container>
     </React.Fragment>
 
